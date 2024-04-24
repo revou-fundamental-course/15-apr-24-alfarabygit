@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!--=============== FAVICON ===============-->
+    <link rel="shortcut icon" href="assets/temperature.png" type="image/x-icon" />
+    <!--=============== CSS ===============-->
+    <link rel="stylesheet" href="css/style.css" />
+    <title>Converter Temperature</title>
+  </head>
+  <body>
+    <div class="container">
+      <h1>Temperature Converter</h1>
+      <label for="fromUnit">From:</label>
+      <select name="fromUnit" id="fromUnit">
+        <option value="C">Celcius</option>
+        <option value="F">Fahrenheit</option>
+        <option value="K">Kelvin</option>
+        <option value="R">Rankine</option>
+      </select>
+      <label for="toUnit">To:</label>
+      <select name="toUnit" id="toUnit">
+        <option value="C">Celcius</option>
+        <option value="F">Fahrenheit</option>
+        <option value="K">Kelvin</option>
+        <option value="R">Rankine</option>
+      </select>
+      <label for="temperature">Temperature</label>
+      <input type="number" id="temperature" placeholder="Enter Temperature" />
+      <button onclick="convert()">Convert</button>
+
+      <label for="result">Result</label>
+      <input type="text" id="result" readonly />
+
+      <label for="formula">Cara Kalkulasi</label>
+      <div id="formula"></div>
+      <h2>Cara Konversi Dari Celcius (C&deg;) ke Fahrenheit (F&deg;)</h2>
+      <p>Suhu <b>S</b> dalam derajat Fahrenheit(F&deg;) sama dengan suhu. <b>S</b> dalam derajat Celcius (C&deg;) kali 9/5 tambah 32</p>
+      <p>S(F&deg;) = (S(C&deg;) x 9/5)+32</p>
+      <p>atau</p>
+      <p>S(F&deg;) = (S(C&deg;) x 1.8)+32</p>
+    </div>
+
+    <script src="js/script.js"></script>
+  </body>
+</html>
